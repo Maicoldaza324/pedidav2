@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff7f8">
+  <title>Para Laura ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+  </div>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-inner">
+        <div class="hero-photo">
+          <img src="fotos/laura.jpg" alt="Laura">
+        </div>
+        <p class="eyebrow">PARA ALGUIEN MUY ESPECIAL</p>
+        <h1>Laura,<br><em>tengo algo para ti</em></h1>
+        <p class="hero-text">Una pequeña sorpresa que preparé con mucho cariño.</p>
+        <button class="primary-btn" onclick="goTo('historia')">Abrir sorpresa <span>♡</span></button>
+        <div class="scroll">desliza para comenzar ↓</div>
+      </div>
+    </section>
+
+    <section class="story section" id="historia">
+      <div class="section-inner">
+        <span class="chapter">01</span>
+        <p class="eyebrow">TODO COMENZÓ</p>
+        <h2>El 31 de enero...</h2>
+        <div class="story-card">
+          <div class="date">31<br><small>ENERO</small></div>
+          <div>
+            <h3>Una noche, un concierto y una coincidencia.</h3>
+            <p>Quizás ese día ninguno de los dos imaginaba todo lo que vendría después.</p>
+            <p>Nos conocimos en un concierto y, poco a poco, aquella coincidencia empezó a convertirse en algo mucho más especial.</p>
+          </div>
+        </div>
+        <button class="ghost-btn" onclick="goTo('momentos')">Quiero seguir leyendo →</button>
+      </div>
+    </section>
+
+    <section class="moments section" id="momentos">
+      <div class="section-inner">
+        <span class="chapter">02</span>
+        <p class="eyebrow">Y DESPUÉS...</p>
+        <h2>Fueron llegando<br><em>momentos bonitos.</em></h2>
+        <div class="moment-grid">
+          <article><span>🍽️</span><strong>Comidas</strong><p>Planes sencillos que se disfrutan más contigo.</p></article>
+          <article><span>🎬</span><strong>Películas</strong><p>Salidas al cine y excusas para compartir tiempo.</p></article>
+          <article><span>🎵</span><strong>Música</strong><p>Porque todo comenzó justamente con una canción.</p></article>
+          <article><span>♡</span><strong>Conversaciones</strong><p>Momentos que hicieron que te conociera cada vez más.</p></article>
+        </div>
+        <p class="highlight">Y entre un plan y otro, empecé a darme cuenta de algo...<br><strong>me encanta compartir momentos contigo.</strong> ❤️</p>
+        <button class="primary-btn" onclick="goTo('foto')">Hay algo más... ♡</button>
+      </div>
+    </section>
+
+    <section class="photo-section section" id="foto">
+      <div class="section-inner">
+        <span class="chapter">03</span>
+        <p class="eyebrow">UN PEQUEÑO DETALLE</p>
+        <h2>Hay algo que todavía<br><em>nos falta...</em></h2>
+        <p class="lead">Una foto juntos.</p>
+        <p>Pero quizás eso no sea algo triste. Significa que todavía tenemos muchos momentos por vivir, lugares por conocer y recuerdos por guardar.</p>
+
+        <div class="single-photo">
+          <img src="fotos/laura.jpg" alt="Laura">
+          <div class="photo-label">Una persona muy especial ♡</div>
+        </div>
+
+        <p class="closing">Y me gustaría que esta fuera apenas <strong>la primera página.</strong></p>
+        <button class="primary-btn" onclick="goTo('carta')">Leer algo para ti →</button>
+      </div>
+    </section>
+
+    <section class="letter section" id="carta">
+      <div class="letter-paper">
+        <span class="chapter">04</span>
+        <p class="eyebrow">PARA TI, LAURA</p>
+        <h2>Hay algo que quiero decirte...</h2>
+        <p>Laura, no sé exactamente en qué momento dejaste de ser simplemente alguien que conocí y empezaste a convertirte en alguien realmente especial para mí.</p>
+        <p>Solo sé que disfruto cada momento contigo y que me encanta todo lo que hemos ido construyendo desde aquel 31 de enero.</p>
+        <p>Y aunque no sé qué nos espera después de este momento, sí sé con quién quiero descubrirlo.</p>
+        <p>Por eso hice esta pequeña sorpresa. Porque quería preguntártelo de una manera que pudieras recordar.</p>
+        <div class="signature">Con todo mi cariño,<br><strong>Maicol ♡</strong></div>
+        <button class="dark-btn" onclick="goTo('pregunta')">Y ahora sí... →</button>
+      </div>
+    </section>
+
+    <section class="question section" id="pregunta">
+      <div class="question-inner">
+        <span class="chapter">05</span>
+        <p class="eyebrow">LA PREGUNTA</p>
+        <div class="mini-heart">♥</div>
+        <h2>Laura...</h2>
+        <p class="question-text">tengo una pregunta para ti.</p>
+        <h3>¿Quieres ser<br><em>mi novia?</em></h3>
+        <p class="question-note">No importa cuál sea la respuesta, gracias por ser parte de estos momentos. ❤️</p>
+        <div class="answers">
+          <button class="primary-btn big" onclick="sayYes()">Sí, quiero ♡</button>
+          <button class="outline-btn" onclick="sayYes()">¡Claro! 🥹</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="final section hidden" id="final">
+      <div class="final-inner">
+        <div class="big-heart">♥</div>
+        <p class="eyebrow">DIJISTE QUE SÍ</p>
+        <h2>Oficialmente comienza<br><em>nuestra historia.</em></h2>
+        <p>Gracias por decir que sí.</p>
+        <p>Ahora tenemos algo que todavía no teníamos cuando comenzó todo aquel 31 de enero:</p>
+        <strong>una historia que podemos seguir escribiendo juntos.</strong>
+
+        <div class="together-photo">
+          <img src="fotos/juntos.jpg" alt="Maicol y Laura">
+        </div>
+
+        <p class="final-message">Este es solo el comienzo. ❤️</p>
+        <div class="signature">— Maicol</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
